@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.home-section {
+    background: url('../images/building.jpg') no-repeat center center;
+    background-size: cover; /* Menjaga aspek rasio gambar */
+    background-attachment: fixed; /* Mengunci gambar agar tidak bergerak saat scroll */
+    height: 100vh; /* Menyesuaikan tinggi elemen dengan viewport, bisa diubah sesuai kebutuhan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    box-sizing: border-box;
+    color: white;
+}
+.about-section, .activities-section, .news-section, .contact-section {
+    padding-top: 100px; /* Tambahkan padding pada bagian atas untuk menghindari konten tertutup navbar */
+    padding-bottom: 60px;
+}
+
+.activities-section .card {
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 20px 0;
+}
+ .navbar{
+    background-color: #13334d;
+ }
+
+ .navbar-nav .nav-link {
+    color: white !important; /* Mengubah warna teks menjadi putih */
+    cursor: pointer; /* Menambahkan pointer saat kursor berada di atas teks */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd !important; /* Warna teks saat hover, bisa disesuaikan */
+}
+
+
+.rounded-img {
+    width: 60;
+    height: 60px;
+    border-radius: 15px; /* Mengatur tingkat kebulatan sudut */
+    object-fit: cover; /* Memastikan gambar mengisi area dengan baik */
+}
+
+/* Style dasar tombol */
+.btn-started {
+    display: inline-block; /* Mengatur elemen a seperti tombol */
+    background-color: #13334d; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah dari link */
+    padding: 10px 20px; /* Padding dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border-radius: 5px; /* Sudut yang melengkung */
+    border: 2px solid transparent; /* Border transparan untuk hover */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Efek transisi */
+  }
+  
+  /* Efek hover untuk tombol 1 */
+  .btn-started:hover {
+    background-color: transparent; /* Background transparan saat hover */
+    color: #13334d; /* Warna teks saat hover */
+    border-color: #13334d; /* Warna border saat hover */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  }
+  
+  /* Gaya dasar untuk tombol 2 */
+  .btn-login {
+    background-color: transparent; /* Background transparan sebelum hover */
+    color: #13334d; /* Warna teks tombol */
+    border: 2px solid #13334d; /* Border berwarna sebelum hover */
+    text-decoration: none; /* Menghilangkan garis bawah dari link */
+    padding: 10px 20px; /* Padding dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    border-radius: 5px; /* Sudut yang melengkung */
+    border: 2px solid; /* Border transparan untuk hover */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Efek transisi */
+  }
+  
+  /* Efek hover untuk tombol 2 */
+  .btn-login:hover {
+    background-color: white; /* Background putih saat hover */
+    color: #13334d; /* Warna teks tetap */
+    border-color: transparent; /* Warna border tetap */
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  }
+  
+  /* Gaya untuk grup tombol */
+  .button-group {
+    display: flex; /* Menggunakan Flexbox untuk menyusun tombol secara horizontal */
+    justify-content: center; /* Menyusun tombol di tengah */
+    gap: 20px; /* Jarak antara tombol */
+  }
+
+  /* Mengubah warna icon burger menjadi putih */
+/* Mengubah warna ikon burger menjadi putih */
+.navbar-toggler i {
+    color: white !important; /* Mengubah warna ikon menjadi putih */
+}
+
+/* Mengubah warna ikon burger saat di-hover atau aktif */
+.navbar-toggler:hover i,
+.navbar-toggler:focus i {
+    color: white !important; /* Warna tetap putih saat hover atau focus */
+}
